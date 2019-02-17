@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head>
+ 
+<title>Is this a dream?</title>
+<script src="http://www.iplayvideogames.com/jquery-1.2.6.min.js"></script> 
+<script> 
+	function managePrompt(){
+		var prompt = document.getElementById('prompt');
+		prompt.style.top=(window.innerHeight-prompt.offsetHeight)/2+'px'; 
+		prompt.style.left=(window.innerWidth-prompt.offsetWidth)/2+'px';
+	}
+	function flipPrompt(){
+		var prompt = document.getElementById('prompt');				
+		if(prompt.style.visibility=='visible'){
+			prompt.style.visibility='hidden';
+		}else{
+			prompt.style.visibility='visible';
+		}
+	}
+</script>
+<style> 
+	body{
+		margin:0px;
+		overflow: hidden;
+		background-color:black;
+	}
+	#prompt{
+		color: white;
+		font-family: arial;
+		position: absolute;
+		top:0px;
+		left:0px;
+		width:500px;
+	}
+	#prompt h2{
+		text-align:center;
+	}
+	#prompt h3{
+		float:left;
+		width:50%;
+		margin:0px;
+		padding:0px;
+		text-align:center;
+		cursor: pointer;
+	}
+</style> 
+</head>
+ 
+<body style="background-color:#050505;">
+
+<h2 style="position:absolute;top:25px;right:25px;text-align:right;color:white;font-family:arial;line-height:1.5em;"><a href="http://www.iplayvideogames.com/frontpages/" style="text-decoration:none;color:white;">&para;</a></h2>
+
+<img src="nemo.png" style="border:none;position:absolute;bottom:0px;left:0px;cursor:pointer;" onClick="managePrompt(); flipPrompt();" />
+
+
+<div id="prompt" style="visibility:hidden;">
+<h2>Where to?</h2>
+<h3 onClick="document.location.href='http://iplayvideogames.wordpress.com';">Reviews</h3>
+<h3 onClick="document.location.href='http://ruminatron5000.wordpress.com';">Blog</h3>
+<div style="clear:both;height:25px;"></div></div>
+<noscript><h2>Where to?</h2><ul><li><a href="http://iplayvideogames.wordpress.com">Reviews</a></li><li><a href="http://ruminatron5000.wordpress.com">Blog</a></li></ul></noscript>
+
+
+</body>
+</html>

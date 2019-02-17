@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>?</title>
+		<style>
+			body{
+				margin:0px;
+				overflow: hidden;
+				background-color:black;
+			}
+		</style>
+		<script>
+			var isPresent = false;
+			var isTripped = false;
+			function goColonel(){
+				if(!isPresent){
+					// iwy-ECE9zXU
+					// Zeeq2fYbfGY
+					document.getElementsByTagName("body")[0].innerHTML += "<iframe height=\"1\" width=\"1\" style=\"visibility:hidden;\" src=\"http://www.youtube.com/watch?v=Zeeq2fYbfGY\"></iframe>";
+					isPresent = true;
+				}
+			}
+			function tripWire(){
+				if(!isTripped){
+					setTimeout("goColonel()",0)//5000)
+					isTripped = true;
+				}
+			}
+		</script>
+	</head>
+<!--<body onBlur="tripWire()">-->
+<body onload="tripWire()">
+	<img src="nwhy.jpg" style="width:100%;" onMouseOut="tripWire()" />
+</body>
+</html>

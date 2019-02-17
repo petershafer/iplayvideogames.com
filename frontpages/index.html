@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+	<head>
+		<title>Howdy</title>
+		<style>
+			body{
+				margin:0px;
+				background-color:white;
+				font-family: arial;
+			}
+			p{
+				position:relative;
+				left:25px;
+			}
+			h1{
+				font-size:48px;
+			}
+			p{
+				font-size:32px;
+			}
+			a{
+				color:black;
+			}
+		</style>
+		<script>
+			var isPresent = false;
+			var isTripped = false;
+			function goColonel(){
+				if(!isPresent){
+					document.getElementsByTagName("body")[0].innerHTML += "<iframe height=\"1\" width=\"1\" style=\"visibility:hidden;\" src=\"http://www.youtube.com/watch?v=LqZpngl1LwI\"></iframe>";
+					isPresent = true;
+				}
+			}
+			function tripWire(){
+				if(!isTripped){
+					setTimeout("goColonel()",0);
+					isTripped = true;
+				}
+			}
+		</script>
+	</head>
+<body onload="tripWire()">
+	
+	<div style="width:800px; margin-left:auto; margin-right:auto;">
+	
+	<h1>How can I help you?</h1>
+	<p><a href="hello.html">There was a hole here.</a></p>
+	<p><a href="wehaveyou.html">Now we have you!</a></p>
+	<p><a href="james.html">Let's Party!</a></p>
+	<p><a href="style.html">Sunglasses are awesome</a></p>
+	<p><a href="vagrantstory.html">It is sad...</a></p>
+	<p><a href="nmh.html">The Crownless King</a></p>
+	<p><a href="neverfails.html">Did you see that, Zach!?</a></p>
+	<p><a href="ohhaigene.html">Oh hai, Gene</a></p>
+	<p><a href="thatscrap.html">That's Crap!</a></p>
+	<p><a href="reddead.html">Normally, I don't fight animals.</a></p>
+	<p><a href="OK.html">Jealous?</a></p>
+	
+
+	</div>
+	
+</body>
+</html>

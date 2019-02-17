@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>It is sad...</title>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+	background-color:black;
+	color:white;
+	cursor: pointer;
+	overflow:hidden;
+}
+</style>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load("jquery", "1");
+google.load("jqueryui", "1.7.2");
+var myimg = new Image();
+myimg.src="vagrantstory.jpg";
+var readyinc = 0;
+function go(){
+	readyinc = readyinc + 1;
+	if(readyinc >= 2){
+		runit();
+	}
+}
+function runit(){
+	$("#vs").show("puff",{},1000,function(){
+		$("#q0").hide();
+		$("#q1,#q2").show("drop",{},1000);
+	});
+}
+document.onclick = function () {
+	document.location.href="http://iplayvideogames.wordpress.com";
+}
+</script>
+</head>
+<body onLoad="go()">
+<iframe style="visibility:hidden;height:1px;width:1px;position:absolute;left:-1px;top:-1px;" src="http://www.youtube.com/watch?v=ZqpdsieTL_s" onLoad="go();"></iframe>
+<img src="vagrantstory.jpg" id="vs" style="width:100%;display:none;position:absolute;bottom:0px;z-index:0;" />
+<p style="padding-left:25px;"><a href="http://iplayvideogames.wordpress.com" style="color:#333333;font-size:0.8em;">Continue to iPlayVideoGames</a></p>
+<p id="q1" style="display:none;position:absolute;font-weight:bold;font-size:1.25em;bottom:0px;padding:15px 25%;text-align:center;z-index:2;">Even if he can see the past and clasp the truth, how are we to know if he speaks it? If he can push us to believe anything, how do we tell truth from falsehood?</p>
+<p id="q2" style="display:none;position:absolute;font-weight:bold;font-size:1.25em;bottom:0px;padding:13px 25%;text-align:center;color:black;z-index:1;">Even if he can see the past and clasp the truth, how are we to know if he speaks it? If he can push us to believe anything, how do we tell truth from falsehood?</p>
+<p id="q0" style="position:absolute;font-weight:bold;font-size:1.25em;bottom:0px;padding:13px 25%;text-align:center;z-index:-1;">It is sad...</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+body{
+	font-family:verdana;
+	margin:0px;
+	color:#0033aa;
+	background-color:#ffbb77;
+	font-size:11px;
+}
+
+div#title{
+	width:800px;
+	margin: 0px auto;
+	padding: 5px;
+	text-align:center;
+	background-color:#2288ff;
+}
+
+div#pagewrapper{
+	position:absolute;
+	left:0px;
+	top:10%;
+	width:100%;
+}
+
+h1{
+	margin:0px;
+	padding:0px;
+	font-size:32px;
+}
+
+div#body{
+	width:750px;
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+
+#chara{
+	display:none;
+	z-index:2;
+}
+#machine{
+	position: absolute;
+	right:0px;
+	bottom:25px;
+	z-index:1;
+}
+
+#load{
+	visibility:hidden;
+}
